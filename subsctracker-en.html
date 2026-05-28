@@ -1,127 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subscription Tracker — Privacy Policy</title>
-  <style>
-    body { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
-           max-width: 800px; margin: 40px auto; padding: 0 20px;
-           line-height: 1.9; color: #333; background: #fafafa; }
-    h1 { font-size: 1.6em; border-bottom: 3px solid #00897B; padding-bottom: 10px; color: #00695C; }
-    h2 { font-size: 1.2em; margin-top: 2em; color: #00695C; border-left: 4px solid #00897B; padding-left: 10px; }
-    h3 { font-size: 1.05em; margin-top: 1.5em; color: #444; }
-    p  { margin: 0.6em 0; }
-    a  { color: #00897B; word-break: break-all; }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2em 0; }
-    ul { padding-left: 1.5em; }
-    li { margin: 0.4em 0; }
-    strong { color: #00695C; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #888;
-              border-top: 1px solid #eee; padding-top: 1em; text-align: center; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Subscription Tracker — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --rule: #e2e2e2;
+    --link: #1a4fd6;
+    --accent: #1a2a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --fg: #e9eaed;
+      --muted: #aab0ba;
+      --rule: #333842;
+      --link: #8ab2ff;
+      --accent: #c7d4ee;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 12px 0; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:visited { color: var(--link); }
+  ul { padding-left: 1.4em; margin: 12px 0; }
+  li { margin: 6px 0; }
+  .lead { color: var(--muted); }
+  .lang { margin: 0 0 8px; font-size: 0.95rem; }
+  .updated {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  img, table { max-width: 100%; }
+</style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
+<main>
+  <p class="lang"><a href="subsctracker.html">日本語</a></p>
+  <h1>Privacy Policy</h1>
 
-<p><strong>App</strong>: Subscription Tracker - Manage &amp; Remind</p>
-<p><strong>Developer</strong>: yoshida-web-office</p>
-<p><strong>Last updated</strong>: May 28, 2026</p>
+  <p class="lead">Thank you for using <strong>Subscription Tracker</strong> (the "App"). Kazuki Apps (the "Developer"), which develops and provides the App, respects your privacy and is committed to protecting your personal information. This policy explains how information is handled in the App.</p>
 
-<p>This policy explains how the app handles your information. 日本語版は<a href="subsctracker.html">こちら</a>。</p>
+  <h2>Information We Collect and How We Use It</h2>
+  <p>All subscription information you register in the App (service name, amount, billing cycle, next billing date, category, notes, and free-trial end date), your monthly budget, notification settings, theme, and other preferences are stored only in a local database (Room) on your device. This data is never sent to or shared with external servers, and the Developer cannot access it. The App does not require account registration and does not directly collect personal information such as your name or email address.</p>
+  <p>The App uses <strong>Google AdMob</strong> to display ads. AdMob may collect advertising identifiers (such as GAID) and usage data to optimize advertising.</p>
+  <p>The App uses <strong>Firebase Analytics (Google Analytics for Firebase)</strong> to analyze usage and improve the service. This may collect app usage events (such as adding, editing, or deleting a subscription, viewing statistics, searching, setting a budget, or registering a free trial), general usage statistics, device/OS information, and an app instance identifier. Identifying input such as subscription service names, amounts, notes, and billing dates is never sent — only abstracted parameters (such as billing-cycle type, category type, and language) are used. This information is used for statistical analysis and not to personally identify you.</p>
+  <p>The App uses <strong>Firebase Crashlytics</strong> to improve quality. When the App crashes, diagnostic data such as the crash stack trace, device information, and OS version is sent to Crashlytics. The subscription details you have entered are not included in this data.</p>
+  <p>Billing-date reminders and free-trial end-date reminders are scheduled <strong>locally on your device</strong> based on the billing dates and trial end dates you set. No information is sent externally for notifications. On Android 13 and later, the notification permission (POST_NOTIFICATIONS) is used to display notifications.</p>
 
-<hr>
+  <h2>Third-Party Services</h2>
+  <p>The App uses the following third-party services. For details on how each service handles data, please refer to its respective privacy policy.</p>
+  <ul>
+    <li><strong>Google AdMob</strong>: ad delivery service.<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase / Google Analytics for Firebase</strong>: usage analytics service.<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a> /
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase Crashlytics</strong>: crash diagnostics service.<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>
+    </li>
+  </ul>
 
-<h2>1. Information We Collect and How We Use It</h2>
+  <h2>Data Storage and Sharing</h2>
+  <p>The subscription information, monthly budget, and preferences you register are stored only in local storage on your device. The Developer does not access this data and does not provide or sell it to third parties. Internet communication is used only to display ads, analyze usage, and report crashes, and is encrypted via HTTPS/TLS.</p>
 
-<h3>1-1. Information you enter (stored on your device only)</h3>
-<p>The app stores the following information only in a local database (Room) on your device. <strong>This subscription data is never sent to any external server.</strong></p>
-<ul>
-<li>Service name</li>
-<li>Amount</li>
-<li>Billing cycle (monthly / yearly / weekly)</li>
-<li>Next billing date</li>
-<li>Category</li>
-<li>Reminder settings</li>
-<li>Free-trial end date</li>
-<li>Notes</li>
-</ul>
-<p>This information is used only for the app's features (spending overview, billing-date reminder notifications, and statistics) and for no other purpose.</p>
+  <h2>Your Choices Regarding Ads and Analytics</h2>
+  <p>The identifiers used for ad personalization and analytics can be controlled from your device settings. On Android, you can reset your advertising ID or opt out of ad personalization via "Settings → Privacy → Ads." You can also delete the App's data (subscription information and preferences) at any time from "Settings → Apps" on your device.</p>
 
-<h3>1-2. Information collected automatically</h3>
-<p>To improve quality and serve ads, the app may collect the following through third-party services. <strong>These do not include your specific subscription content such as service names, amounts, or notes.</strong></p>
-<ul>
-<li><strong>Usage analytics</strong> (Firebase Analytics): anonymous statistics such as screen views and feature usage counts</li>
-<li><strong>Crash information</strong> (Firebase Crashlytics): technical data when the app crashes</li>
-<li><strong>Advertising identifier (Ad ID)</strong> (Google AdMob): for ad delivery</li>
-</ul>
+  <h2>Disclaimer</h2>
+  <p>The Developer assumes no responsibility for any damages arising from the use of the App. Reminder notifications may be delayed or undelivered depending on the device state (such as battery-saver settings or OS restrictions). Subscription prices and billing dates are subject to change by their respective providers; please confirm the latest accurate information on each provider's official site.</p>
 
-<hr>
+  <h2>Changes to This Privacy Policy</h2>
+  <p>This policy may be changed without prior notice. The revised policy takes effect when it is posted on this page.</p>
 
-<h2>2. Third-Party Services</h2>
+  <h2>Contact</h2>
+  <p>If you have any questions or feedback regarding this policy, please contact us at the email address below.</p>
+  <p><a href="mailto:kazuki20011020+yoshida_web_office@gmail.com">kazuki20011020+yoshida_web_office@gmail.com</a></p>
+  <p>When you send an email from the App's feedback screen, supporting information — the app version, Android OS version, device manufacturer/model, and locale — is automatically appended to the email body to assist with our response. The contents of your registered subscriptions (service name, amount, notes, etc.) are never included.</p>
 
-<p>The app uses the following third-party services. Please review each service's own privacy policy for how they handle data.</p>
+  <p class="updated">Last updated: May 28, 2026</p>
 
-<ul>
-<li><strong>Google AdMob</strong> (ad delivery)<br>
-<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li><strong>Firebase Analytics</strong> (usage analytics)<br>
-<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
-<li><strong>Firebase Crashlytics</strong> (crash reporting)<br>
-<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
-</ul>
-
-<hr>
-
-<h2>3. Data Sharing</h2>
-
-<p>The subscription information you enter (service names, amounts, notes, etc.) is stored only on your device and is <strong>never shared with or sent to any third party</strong>.</p>
-<p>Firebase Analytics data is handled only as anonymous, aggregated statistics that cannot identify an individual.</p>
-
-<hr>
-
-<h2>4. Advertising</h2>
-
-<p>The app displays ads via Google AdMob. AdMob may use an advertising identifier (Ad ID) to personalize ads. You can opt out of ad personalization in your device settings (Settings → Google → Ads).</p>
-
-<hr>
-
-<h2>5. Deleting Your Data</h2>
-
-<ul>
-<li><strong>Delete individually</strong>: remove each subscription within the app</li>
-<li><strong>Delete all</strong>: Device Settings → Apps → Subscription Tracker → Storage → Clear data</li>
-<li><strong>Uninstall</strong>: uninstalling the app removes all data from your device</li>
-</ul>
-
-<hr>
-
-<h2>6. Disclaimer</h2>
-
-<p>This app is a tool to help you manage subscriptions. The amounts, billing dates, and statistics shown are reference values based on the information you enter. Please check each service's official information for actual billing. The developer is not liable for any damages arising from use of this app.</p>
-
-<hr>
-
-<h2>7. Changes to This Policy</h2>
-
-<p>This policy may be revised as needed. We will notify you of significant changes within the app or on the store listing.</p>
-
-<hr>
-
-<h2>8. Contact</h2>
-
-<p>For questions or requests about this policy or the app, please contact:</p>
-
-<ul>
-<li><strong>Email</strong>: kazuki20011020+yoshida_web_office@gmail.com</li>
-</ul>
-
-<hr>
-
-<p>This policy is effective as of May 28, 2026.</p>
-
-<p>© 2026 yoshida-web-office</p>
-
-<footer>© Kazuki Apps — <a href="index.html">Back to policy list</a></footer>
+  <footer>
+    <p>&copy; Kazuki Apps &mdash; <a href="index.html">Back to policy list</a> &middot; <a href="subsctracker.html">日本語</a></p>
+  </footer>
+</main>
 </body>
 </html>
