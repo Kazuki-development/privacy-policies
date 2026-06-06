@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>フリマ利益計算ツール プライバシーポリシー</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --rule: #e2e2e2;
+    --link: #1a4fd6;
+    --accent: #1a2a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --fg: #e9eaed;
+      --muted: #aab0ba;
+      --rule: #333842;
+      --link: #8ab2ff;
+      --accent: #c7d4ee;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 12px 0; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:visited { color: var(--link); }
+  ul { padding-left: 1.4em; margin: 12px 0; }
+  li { margin: 6px 0; }
+  .lead { color: var(--muted); }
+  .updated {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  img, table { max-width: 100%; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+
+  <p class="lead"><strong>フリマ利益計算ツール</strong>（以下「本アプリ」）をご利用いただきありがとうございます。本アプリを開発・提供する Kazuki Apps（以下「当方」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリにおける情報の取り扱いについて説明します。</p>
+
+  <h2>収集する情報と利用目的</h2>
+  <p>本アプリでユーザーが入力した計算用の数値（販売価格・仕入れ値・梱包資材費・目標利益）、選択したプラットフォーム・発送方法・手数料設定、計算履歴、送料テンプレート、商品プリセット等の各種データは、すべてユーザーのデバイス内のローカルストレージ（Jetpack DataStore）にのみ保存されます。これらのデータが外部サーバーに送信・共有されることはなく、当方がアクセスすることもありません。本アプリはアカウント登録を必要とせず、氏名・メールアドレス等の個人情報を直接収集しません。</p>
+  <p>本アプリは広告表示のために <strong>Google AdMob</strong> を使用しており、AdMob は広告の最適化を目的として広告識別子（GAID 等）および利用状況データを収集する場合があります。</p>
+  <p>本アプリはサービス改善・利用状況の分析のために <strong>Firebase Analytics（Google アナリティクス for Firebase）</strong> を使用しています。これにより、アプリの利用イベント（計算の実行・逆算・各種モードの切替・プラットフォーム選択・テンプレート/プリセットの利用・履歴の復元・結果のコピー・設定変更・レビュー導線・フィードバック導線など）、おおまかな利用状況、端末・OS の情報、アプリインスタンス識別子などが収集される場合があります。販売価格・仕入れ値・梱包費などの入力した実数の金額や、個人を特定し得る入力内容は送信されず、抽象化されたパラメータ（モード種別・プラットフォーム種別・各項目の入力有無・言語等）のみを利用します。これらは統計的な分析に利用され、個人を特定する目的では使用しません。</p>
+  <p>本アプリは品質改善のために <strong>Firebase Crashlytics</strong> を使用する場合があります。アプリのクラッシュが発生した際に、クラッシュ時のスタックトレース・端末情報・OS バージョン等の診断データが Crashlytics に送信されます。送信内容にユーザーが入力した計算データは含まれません。</p>
+
+  <h2>第三者サービス</h2>
+  <p>本アプリは以下の第三者サービスを利用しています。各サービスにおけるデータの取り扱いの詳細は、それぞれのプライバシーポリシーをご参照ください。</p>
+  <ul>
+    <li><strong>Google AdMob</strong>：広告配信サービス。<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase / Google アナリティクス for Firebase</strong>：利用状況分析サービス。<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a> /
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase Crashlytics</strong>：クラッシュ診断サービス。<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>
+    </li>
+  </ul>
+
+  <h2>データの保存・共有</h2>
+  <p>ユーザーが入力した計算データ・各種設定・履歴・テンプレート・プリセットは、ユーザーのデバイス内のローカルストレージにのみ保存されます。当方はこれらのデータにアクセスすることはなく、第三者への提供・販売も行いません。インターネット通信は広告の表示・利用状況の分析・クラッシュ診断のみに使用され、HTTPS/TLS により暗号化されています。</p>
+
+  <h2>広告・解析に関する選択</h2>
+  <p>広告のパーソナライズや解析に用いられる識別子は、端末の設定から制御できます。Android では「設定 → プライバシー → 広告」から広告 ID のリセットや広告のパーソナライズの無効化が可能です。また、本アプリのデータ（計算履歴や各種設定）は、端末の「設定 → アプリ」から本アプリのデータを削除することでいつでも消去できます。</p>
+
+  <h2>お問い合わせ・フィードバック</h2>
+  <p>本アプリには、開発者へご意見・不具合をメールで送信できるフィードバック機能があります。フィードバックのメールを送信される際は、お問い合わせ内容の補助情報として、アプリのバージョン・Android OS バージョン・端末のメーカー／モデル・ロケールが自動的に本文へ付与されます。販売価格・仕入れ値などの計算内容は付与されません。</p>
+
+  <h2>免責事項</h2>
+  <p>本アプリの計算結果は目安であり、その正確性を保証するものではありません。各フリマサービスの手数料率・送料・キャンペーン内容は変更される場合があるため、最新の正確な情報は各サービスの公式サイトでご確認ください。本アプリの利用により生じた損害について、当方は一切の責任を負いません。</p>
+
+  <h2>プライバシーポリシーの変更</h2>
+  <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載された時点から有効となります。</p>
+
+  <h2>お問い合わせ先</h2>
+  <p>本ポリシーに関するご質問・ご意見は以下のメールアドレスにお寄せください。</p>
+  <p><a href="mailto:kazuki20011020+fleamarket@gmail.com">kazuki20011020+fleamarket@gmail.com</a></p>
+
+  <p class="updated">最終更新日：2026年6月6日</p>
+
+  <footer>
+    <p>&copy; Kazuki Apps &mdash; <a href="index.html">ポリシー一覧に戻る</a></p>
+  </footer>
+</main>
+</body>
+</html>
