@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>もぐもぐ プライバシーポリシー</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --rule: #e2e2e2;
+    --link: #1a4fd6;
+    --accent: #1a2a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --fg: #e9eaed;
+      --muted: #aab0ba;
+      --rule: #333842;
+      --link: #8ab2ff;
+      --accent: #c7d4ee;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 12px 0; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:visited { color: var(--link); }
+  ul { padding-left: 1.4em; margin: 12px 0; }
+  li { margin: 6px 0; }
+  .lead { color: var(--muted); }
+  .updated {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  img, table { max-width: 100%; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+
+  <p class="lead"><strong>もぐもぐ（MoguMogu）</strong>（以下「本アプリ」）をご利用いただきありがとうございます。本アプリを開発・提供する Kazuki Apps（以下「当方」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、本アプリにおける情報の取り扱いについて説明します。</p>
+
+  <h2>収集する情報と利用目的</h2>
+  <p>本アプリでユーザーが入力または登録した食品名、購入日、賞味期限または消費期限、カテゴリ、通知設定、カスタムアイコン、並び順などのデータは、ユーザーのデバイス内のローカルデータベース（SQLite）に保存されます。これらの食品管理データは外部サーバーに送信されず、当方が直接アクセスすることもありません。本アプリはアカウント登録を必要とせず、氏名・メールアドレス等の個人情報を直接収集しません。</p>
+  <p>本アプリはレシート読み取り機能のために Google ML Kit Text Recognition を使用します。レシート画像は端末上で処理され、画像や OCR で読み取った文字列が当方のサーバーへアップロードされることはありません。</p>
+  <p>本アプリは広告表示のために <strong>Google AdMob</strong> を使用しており、AdMob は広告配信・広告効果測定・不正防止を目的として、広告識別子（GAID 等）、端末情報、利用状況データを収集する場合があります。</p>
+  <p>本アプリはサービス改善・利用状況の分析のために <strong>Firebase Analytics（Google アナリティクス for Firebase）</strong> を使用しています。これにより、アプリの利用イベント（アプリ起動、食品の追加、レシート読み取り、OCR 結果件数の範囲、通知設定、並び替え変更、自動削除設定、レビュー導線、フィードバック導線、言語変更など）、おおまかな利用状況、端末・OS の情報、アプリインスタンス識別子などが収集される場合があります。食品名、OCR の本文、画像、実際の日付など、個人を特定し得る入力内容は送信せず、抽象化されたパラメータのみを利用します。これらは統計的な分析に利用され、個人を特定する目的では使用しません。</p>
+  <p>本アプリは品質改善のために <strong>Firebase Crashlytics</strong> を使用する場合があります。アプリのクラッシュが発生した際に、クラッシュ時のスタックトレース・端末情報・OS バージョン等の診断データが Crashlytics に送信されます。送信内容に食品名・レシート画像・OCR 本文は含まれません。</p>
+
+  <h2>第三者サービス</h2>
+  <p>本アプリは以下の第三者サービスを利用しています。各サービスにおけるデータの取り扱いの詳細は、それぞれのプライバシーポリシーをご参照ください。</p>
+  <ul>
+    <li><strong>Google AdMob</strong>：広告配信サービス。<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase / Google アナリティクス for Firebase</strong>：利用状況分析サービス。<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a> /
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+    </li>
+    <li><strong>Firebase Crashlytics</strong>：クラッシュ診断サービス。<br>
+      <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">https://firebase.google.com/support/privacy</a>
+    </li>
+  </ul>
+
+  <h2>データの保存・共有</h2>
+  <p>食品管理データはユーザーのデバイス内に保存されます。当方は、ユーザーが登録した食品名、期限、通知設定、カスタムアイコン、並び順などを第三者へ販売・提供しません。広告、解析、クラッシュ診断、メールフィードバックに関する通信は、各第三者サービスまたはユーザーが選択したメールアプリを通じて行われます。</p>
+
+  <h2>通知</h2>
+  <p>本アプリは、登録された食品の期限が近づいたことを知らせるためにローカル通知を使用します。通知本文には食品名が表示される場合があります。通知内容は端末上で作成され、通知のために食品名が当方のサーバーへ送信されることはありません。</p>
+
+  <h2>フィードバックメール</h2>
+  <p>本アプリのフィードバック機能からメールを送信される際は、お問い合わせ内容の補助情報として、アプリのバージョン・OS・端末情報・ロケールが自動的に本文へ付与される場合があります。食品名・レシート画像・OCR 本文は自動付与しません。送信前にメールアプリ上で内容を確認・編集できます。</p>
+
+  <h2>広告・解析に関する選択</h2>
+  <p>広告のパーソナライズや解析に用いられる識別子は、端末の設定から制御できます。Android では「設定 → プライバシー → 広告」から広告 ID のリセットやパーソナライズ広告の制限を行える場合があります。また、本アプリのローカルデータは、端末の「設定 → アプリ」から本アプリのデータを削除することでいつでも消去できます。</p>
+
+  <h2>免責事項</h2>
+  <p>本アプリの期限表示、OCR 結果、通知は、食品管理を補助するための目安です。食品の安全性や品質を保証するものではありません。実際の食品の状態、表示、保存方法を確認したうえでご利用ください。本アプリの利用により生じた損害について、当方は法令上認められる範囲で責任を負いません。</p>
+
+  <h2>プライバシーポリシーの変更</h2>
+  <p>本ポリシーは、機能追加、第三者サービスの変更、法令改正などに応じて変更される場合があります。変更後のポリシーは本ページに掲載された時点から有効となります。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>本ポリシーに関するご質問・ご意見は以下のメールアドレスにお寄せください。</p>
+  <p><a href="mailto:kazuki20011020+yoshida_web_office@gmail.com">kazuki20011020+yoshida_web_office@gmail.com</a></p>
+
+  <p class="updated">最終更新日：2026年6月9日</p>
+
+  <footer>
+    <p>&copy; Kazuki Apps &mdash; <a href="index.html">ポリシー一覧に戻る</a></p>
+  </footer>
+</main>
+</body>
+</html>
