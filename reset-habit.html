@@ -1,128 +1,172 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リセット習慣 - 座りすぎ・目・肩の休憩リマインダー — プライバシーポリシー</title>
-  <style>
-    body { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
-           max-width: 800px; margin: 40px auto; padding: 0 20px;
-           line-height: 1.9; color: #333; background: #fafafa; }
-    h1 { font-size: 1.6em; border-bottom: 3px solid #14857C; padding-bottom: 10px; color: #0E6E66; }
-    h2 { font-size: 1.2em; margin-top: 2em; color: #0E6E66; border-left: 4px solid #14857C; padding-left: 10px; }
-    h3 { font-size: 1.05em; margin-top: 1.5em; color: #444; }
-    p  { margin: 0.6em 0; }
-    a  { color: #14857C; word-break: break-all; }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2em 0; }
-    ul { padding-left: 1.5em; }
-    li { margin: 0.4em 0; }
-    strong { color: #0E6E66; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #888;
-              border-top: 1px solid #eee; padding-top: 1em; text-align: center; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>リセット習慣 - 座りすぎ・目・肩の休憩リマインダー プライバシーポリシー</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --rule: #e2e2e2;
+    --link: #1a4fd6;
+    --accent: #1a2a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --fg: #e9eaed;
+      --muted: #aab0ba;
+      --rule: #333842;
+      --link: #8ab2ff;
+      --accent: #c7d4ee;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 24px 0 8px;
+    color: var(--accent);
+  }
+  p { margin: 12px 0; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:visited { color: var(--link); }
+  ul { padding-left: 1.4em; margin: 12px 0; }
+  li { margin: 6px 0; }
+  .lead { color: var(--muted); }
+  .updated {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  img, table { max-width: 100%; }
+</style>
 </head>
 <body>
-<h1>プライバシーポリシー</h1>
+<main>
+  <h1>プライバシーポリシー</h1>
 
-<p><strong>アプリ名</strong>：リセット習慣 - 座りすぎ・目・肩の休憩リマインダー</p>
-<p><strong>開発者</strong>：吉田Web事務所（yoshida-web-office）</p>
-<p><strong>最終更新日</strong>：2026年6月25日</p>
+  <p class="lead"><strong>リセット習慣 - 座りすぎ・目・肩の休憩リマインダー</strong>（以下「本アプリ」）をご利用いただきありがとうございます。本ポリシーは、本アプリがユーザーの情報をどのように取り扱うかについて定めるものです。</p>
 
-<p>本ポリシーは、本アプリがユーザーの情報をどのように取り扱うかについて定めるものです。</p>
+  <p><strong>開発者</strong>：吉田Web事務所（yoshida-web-office）</p>
 
-<hr>
+  <h2>1. 収集する情報と利用目的</h2>
 
-<h2>1. 収集する情報と利用目的</h2>
+  <h3>1-1. ユーザーが入力・記録する情報（端末内のみに保存）</h3>
+  <p>本アプリは、以下の情報をお使いの<strong>端末内にのみ保存</strong>します。これらを<strong>外部サーバーへ送信することは一切ありません</strong>。</p>
+  <ul>
+    <li>ケアの実施記録（実施したケア・所要時間・実施日時）</li>
+    <li>休憩リマインダーの設定（通知間隔・時間帯・曜日・サイレント設定など）</li>
+    <li>1日の目標回数などのアプリ設定</li>
+  </ul>
+  <p>これらはお使いの端末のローカルデータベース（Room）および端末内設定領域（DataStore）にのみ保存され、本アプリの機能（休憩通知・ケアの記録・週間サマリー表示）のためにのみ使用されます。ログインやアカウント登録は不要です。</p>
 
-<h3>1-1. ユーザーが入力・記録する情報（端末内のみに保存）</h3>
-<p>本アプリは、以下の情報をお使いの<strong>端末内にのみ保存</strong>します。これらを<strong>外部サーバーへ送信することは一切ありません</strong>。</p>
-<ul>
-<li>ケアの実施記録（実施したケア・所要時間・実施日時）</li>
-<li>休憩リマインダーの設定（通知間隔・時間帯・曜日・サイレント設定など）</li>
-<li>1日の目標回数などのアプリ設定</li>
-</ul>
-<p>これらはお使いの端末のローカルデータベース（Room）および端末内設定領域（DataStore）にのみ保存され、本アプリの機能（休憩通知・ケアの記録・週間サマリー表示）のためにのみ使用されます。ログインやアカウント登録は不要です。</p>
+  <h3>1-2. 広告配信のために自動的に取り扱われる情報</h3>
+  <p>本アプリは、無料で提供するために <strong>Google AdMob</strong> による広告を表示します。広告配信のため、AdMob および Google が<strong>広告識別子（Advertising ID）などの端末識別子</strong>を取得・利用する場合があります。</p>
+  <p>本アプリ自体は、ユーザーの氏名・連絡先・位置情報・健康情報を収集することはありません。</p>
 
-<h3>1-2. 広告配信のために自動的に取り扱われる情報</h3>
-<p>本アプリは、無料で提供するために <strong>Google AdMob</strong> による広告を表示します。広告配信のため、AdMob および Google が<strong>広告識別子（Advertising ID）などの端末識別子</strong>を取得・利用する場合があります。</p>
-<p>本アプリ自体は、ユーザーの氏名・連絡先・位置情報・健康情報を収集することはありません。</p>
+  <h3>1-3. 収集しない情報</h3>
+  <p>本アプリは、以下の情報を<strong>収集しません</strong>：</p>
+  <ul>
+    <li>氏名・メールアドレス等の個人情報（お問い合わせ時にユーザーご自身が送信される場合を除く）</li>
+    <li>位置情報</li>
+    <li>連絡先・カメラ・マイク</li>
+    <li>健康・医療に関する診断データ</li>
+  </ul>
+  <p>※本アプリはアクセス解析（Analytics）やクラッシュレポートのツールを使用していません。</p>
 
-<h3>1-3. 収集しない情報</h3>
-<p>本アプリは、以下の情報を<strong>収集しません</strong>：</p>
-<ul>
-<li>氏名・メールアドレス等の個人情報（お問い合わせ時にユーザーご自身が送信される場合を除く）</li>
-<li>位置情報</li>
-<li>連絡先・カメラ・マイク</li>
-<li>健康・医療に関する診断データ</li>
-</ul>
-<p>※本アプリはアクセス解析（Analytics）やクラッシュレポートのツールを使用していません。</p>
+  <h2>2. 第三者サービスの利用</h2>
+  <p>本アプリは、以下の第三者サービスを利用しています。</p>
+  <ul>
+    <li><strong>Google AdMob</strong>（広告配信）：広告の表示・最適化のために端末識別子等が利用される場合があります。詳細は Google のプライバシーポリシーをご確認ください。<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a><br>
+      広告に使われる識別子（広告ID）は、端末の設定からリセット・オプトアウトできます。</li>
+  </ul>
+  <p>アクセス解析・クラッシュレポート・クラウドバックアップは利用していません。</p>
 
-<hr>
+  <h2>3. データの送信・共有</h2>
+  <p>ユーザーが入力・記録した情報（ケア記録・設定）は、すべて端末内にのみ保存され、<strong>第三者に送信・共有されることはありません</strong>。</p>
+  <p>広告配信に関しては、上記 Google AdMob により端末識別子等が取り扱われます。これは「デバイスまたはその他の ID」の収集・共有に該当します。</p>
 
-<h2>2. 第三者サービスの利用</h2>
+  <h2>4. データの削除</h2>
+  <ul>
+    <li><strong>アプリ内データの消去</strong>：端末の設定 → アプリ → リセット習慣 → ストレージ → データを消去</li>
+    <li><strong>アプリ削除</strong>：アプリをアンインストールすると、端末内に保存されたすべてのデータが削除されます</li>
+    <li><strong>広告IDのリセット</strong>：端末の「設定 → プライバシー → 広告」からリセット・オプトアウトできます</li>
+  </ul>
 
-<p>本アプリは、以下の第三者サービスを利用しています。</p>
-<ul>
-<li><strong>Google AdMob</strong>（広告配信）：広告の表示・最適化のために端末識別子等が利用される場合があります。詳細は Google のプライバシーポリシーをご確認ください。<br>
-<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
-広告に使われる識別子（広告ID）は、端末の設定からリセット・オプトアウトできます。</li>
-</ul>
-<p>アクセス解析・クラッシュレポート・クラウドバックアップは利用していません。</p>
+  <h2>5. 健康に関する注意（免責）</h2>
+  <p><strong>本アプリは医療機器ではなく、診断・治療・予防を目的としたものではありません。</strong>提供する休憩・ストレッチ・アイケアは一般的なセルフケアの支援を目的とした情報です。</p>
+  <p>体調に不安がある場合や痛みが続く場合は、医師など専門家にご相談ください。ケアは無理のない範囲で、ご自身の判断で行ってください。</p>
 
-<hr>
+  <h2>6. 未成年の利用について</h2>
+  <p>未成年の方がご利用になる場合は、保護者の同意のもとご利用ください。</p>
 
-<h2>3. データの送信・共有</h2>
+  <h2>7. セキュリティ</h2>
+  <ul>
+    <li>記録・設定データは端末内のみに保存</li>
+    <li>Android のセキュリティ機能（アプリサンドボックス）により、他のアプリからアクセスされることはありません</li>
+  </ul>
 
-<p>ユーザーが入力・記録した情報（ケア記録・設定）は、すべて端末内にのみ保存され、<strong>第三者に送信・共有されることはありません</strong>。</p>
-<p>広告配信に関しては、上記 Google AdMob により端末識別子等が取り扱われます。これは「デバイスまたはその他の ID」の収集・共有に該当します。</p>
+  <h2>8. ポリシーの変更</h2>
+  <p>本ポリシーは、必要に応じて改訂されることがあります。重要な変更がある場合は、アプリ内またはストア掲載情報でお知らせします。</p>
 
-<hr>
+  <h2>9. お問い合わせ</h2>
+  <p>本ポリシーや本アプリに関するご質問・ご要望は、下記までご連絡ください。</p>
+  <ul>
+    <li><strong>メール</strong>：<a href="mailto:kazuki20011020+yoshida_web_office@gmail.com">kazuki20011020+yoshida_web_office@gmail.com</a></li>
+    <li><strong>対応言語</strong>：日本語</li>
+  </ul>
 
-<h2>4. データの削除</h2>
-<ul>
-<li><strong>アプリ内データの消去</strong>：端末の設定 → アプリ → リセット習慣 → ストレージ → データを消去</li>
-<li><strong>アプリ削除</strong>：アプリをアンインストールすると、端末内に保存されたすべてのデータが削除されます</li>
-<li><strong>広告IDのリセット</strong>：端末の「設定 → プライバシー → 広告」からリセット・オプトアウトできます</li>
-</ul>
+  <p class="updated">最終更新日：2026年6月27日</p>
 
-<hr>
-
-<h2>5. 健康に関する注意（免責）</h2>
-<p><strong>本アプリは医療機器ではなく、診断・治療・予防を目的としたものではありません。</strong>提供する休憩・ストレッチ・アイケアは一般的なセルフケアの支援を目的とした情報です。</p>
-<p>体調に不安がある場合や痛みが続く場合は、医師など専門家にご相談ください。ケアは無理のない範囲で、ご自身の判断で行ってください。</p>
-
-<hr>
-
-<h2>6. 未成年の利用について</h2>
-<p>未成年の方がご利用になる場合は、保護者の同意のもとご利用ください。</p>
-
-<hr>
-
-<h2>7. セキュリティ</h2>
-<ul>
-<li>記録・設定データは端末内のみに保存</li>
-<li>Android のセキュリティ機能（アプリサンドボックス）により、他のアプリからアクセスされることはありません</li>
-</ul>
-
-<hr>
-
-<h2>8. ポリシーの変更</h2>
-<p>本ポリシーは、必要に応じて改訂されることがあります。重要な変更がある場合は、アプリ内またはストア掲載情報でお知らせします。</p>
-
-<hr>
-
-<h2>9. お問い合わせ</h2>
-<p>本ポリシーや本アプリに関するご質問・ご要望は、下記までご連絡ください。</p>
-<ul>
-<li><strong>メール</strong>：kazuki20011020+yoshida_web_office@gmail.com</li>
-<li><strong>対応言語</strong>：日本語</li>
-</ul>
-
-<hr>
-
-<p>本ポリシーは 2026年6月25日 より有効です。</p>
-<p>© 2026 吉田Web事務所（yoshida-web-office）</p>
-
-<footer>© Kazuki Apps — <a href="index.html">ポリシー一覧に戻る</a></footer>
+  <footer>
+    <p>&copy; Kazuki Apps &mdash; <a href="index.html">ポリシー一覧に戻る</a></p>
+  </footer>
+</main>
 </body>
 </html>
