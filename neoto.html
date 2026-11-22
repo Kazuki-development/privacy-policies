@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>ねおと - いびき・歯ぎしり録音 プライバシーポリシー</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --rule: #e2e2e2;
+    --link: #1a4fd6;
+    --accent: #1a2a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c;
+      --fg: #e9eaed;
+      --muted: #aab0ba;
+      --rule: #333842;
+      --link: #8ab2ff;
+      --accent: #c7d4ee;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 24px 0 8px;
+    color: var(--accent);
+  }
+  p { margin: 12px 0; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:visited { color: var(--link); }
+  ul { padding-left: 1.4em; margin: 12px 0; }
+  li { margin: 6px 0; }
+  .lead { color: var(--muted); }
+  .updated {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  img, table { max-width: 100%; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+
+  <p class="lead"><strong>ねおと - いびき・歯ぎしり録音</strong>（以下「本アプリ」）をご利用いただきありがとうございます。本ポリシーは、本アプリがユーザーの情報をどのように取り扱うかについて定めるものです。</p>
+
+  <p><strong>開発者</strong>：吉田Web事務所（yoshida-web-office）</p>
+
+  <h2>1. 収集する情報と利用目的</h2>
+
+  <h3>1-1. 録音した音声と記録（端末内のみに保存）</h3>
+  <p>本アプリは、以下の情報をお使いの<strong>端末内にのみ保存</strong>します。本アプリにはサーバーがなく、これらを<strong>外部へ送信することはありません</strong>。</p>
+  <ul>
+    <li>夜の録音の音声（約5分ごとに区切った音声ファイル）</li>
+    <li>音の大きさの記録（1秒ごとの音量）と、そこから端末内で選んだ聞き直しの候補</li>
+    <li>夜ごとの記録（録音の開始・終了時刻など）と、ユーザーが付けた印</li>
+    <li>テーマ・保存期間などのアプリ設定</li>
+    <li>アプリの動作の記録（起動・録音の開始・失敗の理由・再生したかどうか）。音声・印の内容は含みません</li>
+  </ul>
+  <p>これらはアプリ専用の保存領域、端末内のデータベース（Room）、設定領域（DataStore）に保存され、録音・聞き直し・アプリの改善のためにのみ使います。ログインやアカウント登録は不要です。端末のクラウドバックアップや機種変更時のデータ移行の対象からも外しています。</p>
+
+  <h3>1-2. マイクの利用</h3>
+  <p>マイクは、ユーザーが録音を始めてから止めるまでの間と、初回に行う10秒間の録音テスト中だけ使います。録音テストの音声はファイルに保存せず、画面を離れると消えます。録音中は画面を消しても録音を続けるため、通知を表示するフォアグラウンドサービスと、端末をスリープさせないための権限（wake lock）を使います。</p>
+
+  <h3>1-3. 広告配信のために取得される情報</h3>
+  <p>本アプリは、広告配信のために <strong>Google AdMob</strong> を利用しています。AdMob は広告の表示・効果の測定・不正防止・（同意がある場合の）パーソナライズのために、以下の情報を取得することがあります。</p>
+  <ul>
+    <li>広告ID（Advertising ID）などの端末識別子</li>
+    <li>IPアドレスから推定されるおおよその位置情報</li>
+    <li>端末情報（機種・OSバージョン・ネットワークの種類など）</li>
+    <li>広告の表示・操作に関する情報</li>
+  </ul>
+  <p>これらの情報は Google のサーバーへ送信されます。録音した音声・音量・印は、広告の配信には使いません。録音中は広告を読み込みません。Google による情報の取り扱いは、以下をご確認ください。</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google のプライバシーポリシー</a></li>
+    <li><a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">Google 広告についての説明</a></li>
+  </ul>
+
+  <h3>1-4. 収集しない情報</h3>
+  <p>本アプリは、以下の情報を<strong>収集しません</strong>：</p>
+  <ul>
+    <li>氏名・メールアドレス等の個人情報（お問い合わせ時にユーザーご自身が送信される場合を除く）</li>
+    <li>GPS などによる正確な位置情報</li>
+    <li>連絡先・カメラ・写真</li>
+  </ul>
+  <p>※本アプリは、アクセス解析（Analytics）やクラッシュレポートのツールを使用していません。インターネットへのアクセス権限は、広告の表示と Google Play の機能（2 を参照）のためだけに使います。</p>
+
+  <h2>2. 第三者サービスの利用</h2>
+  <p>本アプリは、以下の第三者サービスを利用しています。</p>
+  <ul>
+    <li><strong>Google AdMob</strong>（提供：Google LLC・広告配信）：バナー広告とインタースティシャル広告（全画面の広告）の表示・最適化のために、広告ID などの端末識別子が利用されることがあります。取得される情報は 1-3 のとおりです。<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a></li>
+    <li><strong>Google User Messaging Platform（UMP）</strong>（提供：Google LLC・同意管理）：対象地域のユーザーに、広告に関する同意の選択画面を表示するために利用します。</li>
+    <li><strong>Google Play アプリ内レビュー／アプリ内アップデート</strong>：ストアでの評価画面の表示や、新しいバージョンの案内のために Google Play の機能を呼び出します。本アプリが記録した情報を Google へ送信することはありません。これらの機能の提供にあたって Google が取り扱う情報については、Google のプライバシーポリシーをご確認ください。<br>
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a></li>
+  </ul>
+
+  <h2>3. 広告に関する同意管理</h2>
+  <p>EEA（欧州経済領域）・英国・スイスなどの対象地域のユーザーには、Google の同意管理プラットフォーム（UMP）を通じて、パーソナライズ広告に関する同意の選択画面を表示します。選んだ内容は、アプリ内の「設定 → データとプライバシー → 広告のプライバシー設定」からいつでも変更できます（この項目は、対象地域のユーザーにだけ表示されます）。</p>
+  <p>また、端末の設定（「設定」→「Google」→「広告」、または「設定」→「プライバシー」→「広告」。機種により表記が異なります）から、広告IDのリセットや削除、パーソナライズ広告のオプトアウトができます。</p>
+
+  <h2>4. データの送信・共有</h2>
+  <p>録音した音声と記録は端末内にのみ保存され、<strong>本アプリが第三者に送信・共有することはありません</strong>。本アプリには音声を共有・書き出す機能もありません。広告配信に伴う情報の取得は、1-3 と 3 のとおり Google（AdMob）によって行われます。</p>
+  <p>次の場合に限り、ユーザーご自身の操作によって情報が端末の外へ出ることがあります。</p>
+  <ul>
+    <li><strong>意見箱（お問い合わせ）</strong>：入力内容とアプリ・端末の情報（アプリのバージョン・端末の機種名・Android のバージョン）を載せたメールをメールアプリで作成します。送信するかどうかはユーザーが決められます</li>
+  </ul>
+
+  <h2>5. データの保存期間と削除</h2>
+  <ul>
+    <li><strong>自動の整理</strong>：保存している夜が設定した日数（初期値は7晩）か、合計の容量（1.5GB）を超えると、古い夜から順に自動で削除します。日数はアプリの設定で変えられます</li>
+    <li><strong>夜ごとの削除</strong>：結果の画面から、その夜の音声・音量・印を削除できます</li>
+    <li><strong>すべての削除</strong>：「設定 → すべての録音を削除」で、保存しているすべての夜の音声・印・集計を削除できます</li>
+    <li><strong>アプリ内データの消去</strong>：端末の設定 → アプリ → ねおと → ストレージ → データを消去</li>
+    <li><strong>アプリ削除</strong>：アプリをアンインストールすると、端末内に保存されたすべてのデータが削除されます</li>
+  </ul>
+
+  <h2>6. 医療目的ではないこと（免責）</h2>
+  <p>本アプリは、寝ている間の音を録音して聞き直すためのアプリです。<strong>医療機器ではなく、いびき・歯ぎしり・睡眠時無呼吸などの病気を診断・治療・予防するものではありません</strong>。聞き直しの候補や印は、音の大きさをもとにした目安です。体調が気になるときは医療機関にご相談ください。</p>
+  <p>同じ部屋で寝ている方の声や音が録音されることがあります。録音はご自身の端末内に残りますが、同室の方には録音していることを伝えたうえでご利用ください。</p>
+
+  <h2>7. 未成年の利用について</h2>
+  <p>未成年の方がご利用になる場合は、保護者の同意のもとご利用ください。</p>
+
+  <h2>8. セキュリティ</h2>
+  <ul>
+    <li>音声・記録・設定は端末内のみに保存（広告配信で Google に送られる情報は 1-3 のとおり）</li>
+    <li>Android のセキュリティ機能（アプリサンドボックス）により、他のアプリからアクセスされることはありません</li>
+  </ul>
+
+  <h2>9. ポリシーの変更</h2>
+  <p>本ポリシーは、必要に応じて改訂されることがあります。重要な変更がある場合は、アプリ内またはストア掲載情報でお知らせします。</p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>本ポリシーや本アプリに関するご質問・ご要望は、下記までご連絡ください。</p>
+  <ul>
+    <li><strong>メール</strong>：<a href="mailto:kazuki20011020+yoshida_web_office@gmail.com">kazuki20011020+yoshida_web_office@gmail.com</a></li>
+    <li><strong>対応言語</strong>：日本語</li>
+  </ul>
+
+  <p class="updated">制定日：2026年11月22日</p>
+
+  <footer>
+    <p>&copy; Kazuki Apps &mdash; <a href="index.html">ポリシー一覧に戻る</a></p>
+  </footer>
+</main>
+</body>
+</html>
